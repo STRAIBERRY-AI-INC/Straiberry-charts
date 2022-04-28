@@ -1,0 +1,16 @@
+<resources>
+    <string name="skip">Skip</string>
+
+    <string name="regular_checkup">Regular Checkup</string>
+    <string name="toothache_amp_tooth_sensitivity"><![CDATA[Toothache & Tooth sensitivity]]></string>
+    <string name="problems_with_previous_treatment">Problems with Previous Treatment</string>
+    <string name="others">Others</string>
+    <string name="white_spot">White Spot</string>
+    <string name="amalgam_filling">Amalgam Restoration</string>
+    <string name="calculus">Calculus</string>
+    <string name="carries">Carries</string>
+    <string name="share_with">Share with</string>
+
+    <string name="teeth_whitening">Teeth Whitening</string>
+
+</resources>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="65dp"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:visibility="gone"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_speech_bubble_flat"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewBackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewTime"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_round_access_time_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/secondaryLight" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            style="@style/TextViewSecondaryLightCaption.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/check_ups"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewTime"
+            app:layout_constraintLeft_toRightOf="@id/imageViewTime"
+            app:layout_constraintTop_toTopOf="@id/imageViewTime" />
+
+        <TextView
+            android:id="@+id/textViewDateOne"
+            style="@style/TextViewWhiteCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintLeft_toRightOf="@id/imageViewTime"
+            app:layout_constraintTop_toBottomOf="@id/imageViewTime" />
+
+        <TextView
+            android:id="@+id/textViewScoreOne"
+            style="@style/TextViewWhiteCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/textViewDateOne"
+            app:layout_constraintTop_toTopOf="@id/textViewDateOne"
+            app:layout_constraintBottom_toBottomOf="@id/textViewDateOne"/>
+
+        <TextView
+            android:id="@+id/textViewScoreTwo"
+            style="@style/TextViewWhiteCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/textViewDateTwo"
+            app:layout_constraintTop_toTopOf="@id/textViewDateTwo"
+            app:layout_constraintBottom_toBottomOf="@id/textViewDateTwo"
+            />
+
+        <TextView
+            android:id="@+id/textViewDateTwo"
+            style="@style/TextViewWhiteCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@id/textViewDateOne"
+            app:layout_constraintTop_toBottomOf="@id/textViewDateOne" />
+
+        <ImageView
+            android:id="@+id/textViewMoreThenTwoScore"
+            android:layout_width="23dp"
+            android:layout_height="12dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/ic_round_more_horiz_24"
+            app:layout_constraintLeft_toLeftOf="@id/textViewTitle"
+            app:layout_constraintTop_toBottomOf="@id/textViewDateOne" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutDateRotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_speech_bubble_flat_rotate"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/imageViewBackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewTimeRotate"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_round_access_time_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/secondaryLight" />
+
+        <TextView
+            android:id="@+id/textViewTitleRotate"
+            style="@style/TextViewSecondaryLightCaption.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/check_ups"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewTimeRotate"
+            app:layout_constraintLeft_toRightOf="@id/imageViewTimeRotate"
+            app:layout_constraintTop_toTopOf="@id/imageViewTimeRotate" />
+
+        <TextView
+            android:id="@+id/textViewDateOneRotate"
+            style="@style/TextViewWhiteCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintLeft_toRightOf="@id/imageViewTimeRotate"
+            app:layout_constraintTop_toBottomOf="@id/imageViewTimeRotate" />
+
+        <TextView
+            android:id="@+id/textViewScoreOneRotate"
+            style="@style/TextViewWhiteCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/textViewDateOneRotate"
+            app:layout_constraintTop_toTopOf="@id/textViewDateOneRotate"
+            app:layout_constraintBottom_toBottomOf="@id/textViewDateOneRotate"/>
+
+        <TextView
+            android:id="@+id/textViewScoreTwoRotate"
+            style="@style/TextViewWhiteCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/textViewDateTwoRotate"
+            app:layout_constraintTop_toTopOf="@id/textViewDateTwoRotate"
+            app:layout_constraintBottom_toBottomOf="@id/textViewDateTwoRotate"
+            />
+
+        <TextView
+            android:id="@+id/textViewDateTwoRotate"
+            style="@style/TextViewWhiteCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@id/textViewDateOneRotate"
+            app:layout_constraintTop_toBottomOf="@id/textViewDateOneRotate" />
+
+        <ImageView
+            android:id="@+id/textViewMoreThenTwoScoreRotate"
+            android:layout_width="23dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_round_more_horiz_24"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@id/textViewTitleRotate"
+            app:layout_constraintTop_toBottomOf="@id/textViewDateTwoRotate" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:src="@drawable/chart_slider_tooltip_circle_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutDate" />
+
+    <ImageView
+        android:id="@+id/imageViewScoreBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chart_slider_tooltip_circle"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewBackground"
+        app:layout_constraintLeft_toLeftOf="@id/imageViewBackground"
+        app:layout_constraintRight_toRightOf="@id/imageViewBackground"
+        app:layout_constraintTop_toTopOf="@id/imageViewBackground" />
+
+    <TextView
+        android:id="@+id/textViewScoreAverage"
+        style="@style/TextViewSecondary200.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/medium"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewScoreBackground"
+        app:layout_constraintLeft_toLeftOf="@id/imageViewScoreBackground"
+        app:layout_constraintRight_toRightOf="@id/imageViewScoreBackground"
+        app:layout_constraintTop_toTopOf="@id/imageViewScoreBackground" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

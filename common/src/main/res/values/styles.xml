@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.Subtitle1" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+</resources>

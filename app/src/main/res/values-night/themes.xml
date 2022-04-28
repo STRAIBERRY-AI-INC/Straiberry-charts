@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ChartsSample" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="WhiteningChart">
+        <item name="chart_barsColor">@color/gray200Dark</item>
+        <item name="chart_labelsXColor">@color/gray200Dark</item>
+    </style>
+
+    <style name="HorizontalChart">
+        <item name="chart_gridColorX">@color/gray700WithOpacity5</item>
+        <item name="chart_gridColorY">@color/gray700WithOpacity5</item>
+        <item name="chart_labelsXColor">@color/linkWithoutButton</item>
+        <item name="chart_labelsYColor">@color/black500</item>
+    </style>
+
+    <style name="OralHygieneChart">
+        <item name="chart_gridColorX">@color/gray500Dark</item>
+    </style>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    Custom edit text
+    <declare-styleable name="StraiberryEditText">
+        <attr name="passwordToggleEnabled" format="boolean" />
+        <attr name="hintText" format="string" />
+        <attr name="maxLine" format="integer" />
+        <attr name="maxLength" format="integer" />
+        <attr name="isTextAlignmentCenter" format="boolean" />
+        <attr name="isNumber" format="boolean" />
+        <attr name="isCode" format="boolean" />
+    </declare-styleable>
+
+    Charts
+    <declare-styleable name="ChartAttrs">
+        <!--  Axis  -->
+        <attr name="chart_axis">
+            <enum name="none" value="0" />
+            <enum name="x" value="1" />
+            <enum name="y" value="2" />
+            <enum name="xy" value="3" />
+        </attr>
+        <!--  Labels  -->
+        <attr name="chart_labelsColor" format="color" />
+        <attr name="chart_labelsXColor" format="color" />
+        <attr name="chart_labelsYColor" format="color" />
+        <attr name="chart_labelsSize" format="dimension" />
+        <attr name="chart_labelsFont" format="reference" />
+        <!--  Grid  -->
+        <attr name="chart_grid">
+            <enum name="full" value="0" />
+            <enum name="vertical" value="1" />
+            <enum name="horizontal" value="2" />
+        </attr>
+        <attr name="chart_gridEffect">
+            <enum name="solid" value="0" />
+            <enum name="dashed" value="1" />
+            <enum name="dotted" value="2" />
+        </attr>
+        <attr name="chart_gridColorX" format="color" />
+        <attr name="chart_gridColorY" format="color" />
+        <attr name="chart_gridStrokeWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="BarChartAttrs">
+        <attr name="chart_spacing" format="dimension" />
+        <attr name="chart_barsColor" format="color" />
+        <attr name="chart_horizontal_y_label_type">
+            <enum name="fromZeroToSeven" value="0" />
+            <enum name="fromZeroToHundred" value="1" />
+            <enum name="isCharacter" value="2" />
+        </attr>
+        <attr name="chart_barsColorsList" format="reference" />
+        <attr name="chart_barsBackgroundColor" format="color" />
+        <attr name="chart_barsRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="LineChartAttrs">
+        <attr name="chart_lineColor" format="color" />
+        <attr name="chart_smoothLine" format="boolean" />
+        <attr name="chart_lineThickness" format="dimension" />
+        <attr name="chart_pointsDrawable" format="reference" />
+    </declare-styleable>
+
+    Bottom navigation
+    <declare-styleable name="CellImageView">
+        <attr name="iconImageViewUseColor" format="boolean" />
+        <attr name="iconImageViewIsBitmap" format="boolean" />
+        <attr name="iconImageViewResource" format="reference" />
+        <attr name="iconImageViewColor" format="color" />
+        <attr name="iconImageViewSize" format="dimension" />
+        <attr name="iconImageViewIsAction" format="boolean" />
+        <attr name="iconImageViewActionBackgroundAlpha" format="boolean" />
+        <attr name="iconImageViewChangeSize" format="boolean" />
+        <attr name="iconImageViewFitImage" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SSCustomBottomNavigation">
+        <attr name="ss_defaultIconColor" format="color" />
+        <attr name="ss_selectedIconColor" format="color" />
+        <attr name="ss_iconTextTypeface" format="string" />
+        <attr name="ss_iconTextColor" format="color" />
+        <attr name="ss_selectedIconTextColor" format="color" />
+        <attr name="ss_iconTextSize" format="dimension" />
+        <attr name="ss_waveHeight" format="integer" />
+        <attr name="ss_backgroundBottomColor" format="color" />
+        <attr name="ss_circleColor" format="color" />
+        <attr name="ss_countTextColor" format="color" />
+        <attr name="ss_countBackgroundColor" format="color" />
+        <attr name="ss_countTypeface" format="string" />
+        <attr name="ss_rippleColor" format="color" />
+        <attr name="ss_shadowColor" format="color" />
+    </declare-styleable>
+
+
+    // Calendar
+    <declare-styleable name="StraiberryCalendar">
+        <attr name="titleColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+        <attr name="daysSize" format="dimension" />
+        <attr name="weakNameSize" format="dimension" />
+        <attr name="daysColor" format="color" />
+        <attr name="gridViewDaysMarginLeft" format="dimension" />
+        <attr name="gridViewDaysMarginRight" format="dimension" />
+        <attr name="nextAndPreviousButtonMargin" format="dimension" />
+        <attr name="currentDaySelectedView">
+            <enum name="circle" value="0" />
+            <enum name="none" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

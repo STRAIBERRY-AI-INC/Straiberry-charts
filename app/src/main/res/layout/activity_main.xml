@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <com.straiberry.android.charts.view.HorizontalBarChartView
+            android:id="@+id/horizontalBarChartViewBrushingDigit"
+            style="@style/HorizontalChart"
+            android:layout_width="310dp"
+            android:layout_height="170dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:chart_barsColorsList="@array/BrushingChartFilterColor"
+            app:chart_barsRadius="17dp"
+            app:chart_grid="full"
+            app:chart_horizontal_y_label_type="fromZeroToSeven"
+            app:chart_labelsSize="8sp"
+            app:chart_spacing="13dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.straiberry.android.charts.view.HorizontalBarChartView
+            android:id="@+id/horizontalBarChartViewBrushingCharacter"
+            style="@style/HorizontalChart"
+            android:layout_width="310dp"
+            android:layout_height="170dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:chart_barsColorsList="@array/BrushingChartFilterColor"
+            app:chart_barsRadius="17dp"
+            android:layout_marginTop="40dp"
+            app:chart_grid="full"
+            app:chart_horizontal_y_label_type="isCharacter"
+            app:chart_labelsSize="8sp"
+            app:chart_spacing="13dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/horizontalBarChartViewBrushingDigit" />
+
+        <com.straiberry.android.charts.view.BarChartView
+            android:id="@+id/barChartViewBrushing"
+            android:layout_width="300dp"
+            android:layout_height="170dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:chart_barsColorsList="@array/BrushingChartColor"
+            app:chart_barsRadius="17dp"
+            android:layout_marginTop="50dp"
+            app:chart_grid="horizontal"
+            app:chart_gridColorY="@color/gray400WithOpacity14"
+            app:chart_labelsSize="8dp"
+            app:chart_labelsXColor="@color/linkWithoutButton"
+            app:chart_labelsYColor="@color/linkWithoutButton"
+            app:chart_spacing="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/horizontalBarChartViewBrushingCharacter" />
+
+        <com.straiberry.android.charts.view.LineChartView
+            android:id="@+id/linearChartViewOralHygiene"
+            style="@style/OralHygieneChart"
+            android:layout_width="325dp"
+            android:layout_height="230dp"
+            android:layout_marginBottom="8dp"
+            android:layoutDirection="ltr"
+            android:layout_marginTop="40dp"
+            app:chart_grid="vertical"
+            app:chart_gridEffect="dashed"
+            app:chart_gridStrokeWidth="1dp"
+            app:chart_labelsSize="8sp"
+            app:chart_labelsXColor="@color/linkWithoutButton"
+            app:chart_labelsYColor="@color/linkWithoutButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barChartViewBrushing" />
+
+        <TextView
+            style="@style/TextViewSecondaryLightCaption.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/medium"
+            android:text="@string/today"
+            app:layout_constraintBottom_toBottomOf="@id/linearChartViewOralHygiene"
+            app:layout_constraintRight_toRightOf="@id/linearChartViewOralHygiene" />
+
+        <com.straiberry.android.charts.view.BarPercentChartView
+            android:id="@+id/barPercentChartWhitening"
+            style="@style/WhiteningChart"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:layoutDirection="ltr"
+            app:chart_axis="x"
+            app:chart_labelsSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearChartViewOralHygiene" />
+
+        <TextView
+            style="@style/TextViewSecondaryLightCaption.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:layout_marginEnd="14dp"
+            android:text="@string/today"
+            app:layout_constraintBottom_toBottomOf="@id/barChartViewBrushing"
+            app:layout_constraintRight_toRightOf="@id/barChartViewBrushing" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

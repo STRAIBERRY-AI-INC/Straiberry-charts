@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.H1Headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">96sp</item>
+    </style>
+
+    <style name="TextAppearance.H2Headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="TextAppearance.H3Headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <style name="TextAppearance.H4Headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="TextAppearance.H5Headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">27sp</item>
+    </style>
+
+    <style name="TextAppearance.H6Headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TextAppearance.H7Headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.H8Headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.Subtitle1" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Subtitle2" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Body1" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.Body2" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.ButtonAllCaps" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.Caption" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.CaptionSmall" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextAppearance.CaptionXSmall" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="TextAppearance.CaptionXXSmall" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="TextAppearance.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+</resources>

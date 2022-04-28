@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray500">#8D8D8D</color>
+    <color name="gray200">#A1A1A1</color>
+
+    // Dark colors
+    <color name="secondaryDark">#0A112D</color>
+    <color name="gray400Dark">#233559</color>
+    <color name="gray200Dark">#4F6076</color>
+
+    <color name="editTextBackgroundColor">@color/white</color>
+    <color name="strokeColor">#5dc2b9</color>
+    <color name="strokeColorFocused">#015DAB</color>
+    <color name="editTextTextColor">#757575</color>
+    <color name="editTextEyeColor">#8D8D8D</color>
+
+    Main Colors
+    <color name="primary">#5DC2B9</color>
+    <color name="primaryLight300Opacity62">#9E3AEEDD</color>
+    <color name="primaryLight200">#DCFFFC</color>
+    <color name="secondary">#0A63AE</color>
+    <color name="secondaryLight">#015DAB</color>
+    Dark
+    <color name="headlinesLabel">#DCFFFC</color>
+    <color name="bodyText500">#686565</color>
+
+    Light
+
+    Alert
+    Chart
+    <color name="orange500">#FF6A44</color>
+    <color name="green200">#5CE5CE</color>
+    <color name="green700">#0FB79A</color>
+    <color name="yellow200">#FFE487</color>
+
+</resources>

@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+
+    // Text views
+
+    <style name="TextViewSecondaryLightCaption.Small" parent="TextAppearance.CaptionSmall">
+        <item name="android:textColor">@color/headlinesLabel</item>
+    </style>
+
+
+    // Button
+
+    // Charts
+
+    // Edit text
+
+    // Views
+
+    // Bottom navigation
+
+    // Background
+
+    // Floating action button
+
+</resources>

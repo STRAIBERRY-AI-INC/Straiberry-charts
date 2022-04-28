@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+
+    <style name="TextViewSecondaryLightCaption.Small" parent="TextAppearance.CaptionSmall">
+        <item name="android:textColor">@color/secondaryLight</item>
+    </style>
+
+    <style name="TextViewSecondary200.Body1" parent="TextAppearance.Body1">
+        <item name="android:textColor">@color/secondary200</item>
+    </style>
+
+    <style name="TextViewWhiteCaption" parent="TextAppearance.CaptionSmall">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextViewGray500.Caption" parent="TextAppearance.Caption">
+        <item name="android:textColor">@color/gray500</item>
+    </style>
+
+    <style name="TextViewPrimaryCaptionSmall" parent="TextAppearance.CaptionSmall">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+</resources>

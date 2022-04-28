@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<style name="TextViewSecondaryLight.Subtitle1" parent="TextAppearance.Subtitle1">
+        <item name="android:textColor">@color/secondaryLight</item>
+    </style>
+
+    <style name="TextAppearance.EditText.Code" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/secondary</item>
+    </style>
+
+</resources>

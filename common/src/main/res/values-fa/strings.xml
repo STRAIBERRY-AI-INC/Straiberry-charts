@@ -1,0 +1,15 @@
+<resources>
+    <string name="skip">رد کردن</string>
+
+    <string name="regular_checkup">معاینه  دوره ای</string>
+    <string name="toothache_amp_tooth_sensitivity">درد و حساسیت دندانی</string>
+    <string name="problems_with_previous_treatment">مشکلات درمان های قبلی</string>
+    <string name="others">سایر موارد</string>
+    <string name="white_spot">لکه سفید روی دندان</string>
+    <string name="amalgam_filling">ترمیم آمالگام</string>
+    <string name="calculus">جرم دندان</string>
+    <string name="carries">پوسیدگی دندان</string>
+    <string name="share_with">Share with</string>
+
+    <string name="teeth_whitening">میزان سفیدی دندان</string>
+</resources>
