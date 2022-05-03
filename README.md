@@ -49,6 +49,9 @@
 There is four type of chart in this library:
 
 1. Horizontal Bar Chart
+
+![Horizontal Bar Chart](image/horizontal_chart.gif)
+
 ```sh
   <com.straiberry.android.charts.view.HorizontalBarChartView
             android:id="@+id/horizontalBarChartViewBrushingDigit"
@@ -88,6 +91,8 @@ Setup input data:
 ```
 
 2. Bar Chart
+
+![Horizontal Bar Chart](image/bar_chart.gif)
 
 ```sh
  <com.straiberry.android.charts.view.BarChartView
@@ -131,6 +136,8 @@ private fun setupBarChart() {
 
 3. Bar percent chart
 
+![Horizontal Bar Chart](image/bar_percent_chart.gif)
+
 ```sh
 <com.straiberry.android.charts.view.BarPercentChartView
             android:id="@+id/barPercentChartWhitening"
@@ -168,6 +175,9 @@ private fun setupBarPercentChart() {
 ```
 
 4. Line chart
+
+![Horizontal Bar Chart](image/line_chart.gif)
+
 ```sh
 <com.straiberry.android.charts.view.LineChartView
             android:id="@+id/linearChartViewOralHygiene"
