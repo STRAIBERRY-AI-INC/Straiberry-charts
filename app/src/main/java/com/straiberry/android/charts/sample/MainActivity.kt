@@ -23,12 +23,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         sliderTooltip = SliderTooltip()
         setupLinearChart()
-        setupWhiteningChart()
+        setupBarPercentChart()
         setupHorizontalChart()
-        setupBrushingChart()
+        setupBarChart()
     }
 
-    private fun setupWhiteningChart() {
+    private fun setupBarPercentChart() {
         // Prepare the tooltip to show on chart
         val pointTooltip = PointTooltip()
         pointTooltip.onCreateTooltip(binding.content)
@@ -42,16 +42,17 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupBrushingChart() {
+    private fun setupBarChart() {
         val currentDate = Date()
         val calendar = Calendar.getInstance()
         calendar.time = currentDate
         val data: ArrayList<HashMap<String, Int?>> = arrayListOf()
+
         repeat(7){
-            data.add(hashMapOf(Pair(calendar.time.convertCurrentDateToChartDate(
-                LINE_CHART_DATE_FORMAT),it+1)))
+            data.add(hashMapOf(Pair(calendar.time.convertCurrentDateToChartDate(LINE_CHART_DATE_FORMAT),it+1)))
             calendar.add(Calendar.DATE, -1)
         }
+
         binding.barChartViewBrushing.animate(data.toChartData())
     }
 
@@ -82,23 +83,23 @@ class MainActivity : AppCompatActivity() {
         val remoteData = HashMap<String, List<String?>>()
         remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("11")
         calendar.add(Calendar.DATE, -1)
-        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("10", "11")
+        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("11")
         calendar.add(Calendar.DATE, -1)
-        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("8", "9")
+        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("11")
         calendar.add(Calendar.DATE, -1)
-        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("9" )
+        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("10" )
         calendar.add(Calendar.DATE, -1)
-        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("7", "8")
+        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("11")
+        calendar.add(Calendar.DATE, -1)
+        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("7")
+        calendar.add(Calendar.DATE, -1)
+        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("9")
+        calendar.add(Calendar.DATE, -1)
+        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("4")
+        calendar.add(Calendar.DATE, -1)
+        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("5")
         calendar.add(Calendar.DATE, -1)
         remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("6")
-        calendar.add(Calendar.DATE, -1)
-        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("5", "4")
-        calendar.add(Calendar.DATE, -1)
-        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("4", "4")
-        calendar.add(Calendar.DATE, -1)
-        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("5", "5")
-        calendar.add(Calendar.DATE, -1)
-        remoteData[calendar.time.convertCurrentDateToChartDate(LINEAR_CHART_DATE_FORMAT)] = listOf("6", "7")
 
         // Convert data to chart input
         val lineChartData = remoteData.toOralHygieneChart()
@@ -210,6 +211,6 @@ class MainActivity : AppCompatActivity() {
         private const val LINEAR_CHART_DATE_FORMAT = "yyyy/MM/dd"
         private const val LINE_CHART_DATE_FORMAT = "yyyy-MM-dd"
 
-        private const val CHART_ANIMATION_DURATION = 500L
+        private const val CHART_ANIMATION_DURATION = 2500L
     }
 }
