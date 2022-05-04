@@ -7,16 +7,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="image/empty_logo.png" alt="Logo" width="80" height="80">
+    <img src="image/Github-1.png" alt="Straiberry">
   </a>
 
   <h1 align="center">Straiberry Charts</h1>
 
   <p align="center">
     An awesome Chart library for android
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://www.straiberry.com/">Straiberry</a>
     ·
